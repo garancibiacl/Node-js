@@ -1,0 +1,16 @@
+{
+  "name": "softjobs-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desafío Soft Jobs (Backend JWT + Frontend React) - Integración lista",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently -n BACK,FRONT -c auto \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start:backend": "npm --prefix backend start",
+    "start:frontend": "npm --prefix frontend preview",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
